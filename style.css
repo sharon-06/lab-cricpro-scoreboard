@@ -44,6 +44,7 @@ body {
 table {
 	width: 73%;
 	height: 61vh;
+	display: flex row;
 	font-family: Georama, sans-serif;
 	background: white;
 	border-collapse: collapse;
@@ -68,6 +69,7 @@ table {
 
 td {
 	height: 40px;
+	display: flex row;
 	padding: 0 20px 0 20px;
 	font-size: larger;
 	font-family: "Georama", sans-serif;
@@ -113,14 +115,23 @@ tr:is(:nth-child(3), :nth-child(4), :nth-child(5), :nth-child(6), :nth-child(7),
 	color: #8282829c;
 }
 
+a img { 
+	display:none;
+	position:absolute;
+	
+ }
+a:hover img { display:block; }
+#g{
+	color:grey;
+}
+
 a {
 	text-decoration: none;
 	color: #2f80ed;
 }
 
-a:hover {
-	text-decoration: underline;
-}
+
+
 
 .details {
 	position: absolute;
